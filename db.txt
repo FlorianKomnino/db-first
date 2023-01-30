@@ -1,0 +1,45 @@
+Nome: auto
+
+id                              integer         MEDIUMINT       PRIMARY-KEY
+
+model                           string          VARCHAR(30)     NOTNULL
+
+kind_of_car                     string          VARCHAR(30)     NULL
+
+brand                           string          VARCHAR(30)     NOTNULL
+
+production_year                 integer         TINYINT         NOTNULL
+
+actual_owner                    string          VARCHAR(30)     NOTNULL
+
+previous_owners                 string          VARCHAR(255)    NULL
+
+engine_displacement_in_cc       integer         MEDIUMINT       NULL
+
+automatic_gearbox               integer         TINYINT         NULL  //boolean
+
+power_supply_type               string          VARCHAR(30)     NULL
+
+location                        string          VARCHAR(30)     NOTNULL
+
+is_sold                         integer         TINYINT         NOTNULL  //boolean
+
+color                           string          VARCHAR(30)     NULL
+
+length_in_cm                    integer         MEDIUMINT       NULL
+
+height_in_cm                    integer         MEDIUMINT       NULL
+
+width_in_cm                     integer         MEDIUMINT       NULL
+
+pollution_category              string          VARCHAR(10)     NULL
+
+travelled_distance_in_km        integer         MEDIUMINT       NULL
+
+is_check_up_done                integer         TINYINT         NOTNULL  //boolean
+
+check_up_conclusions            string          VARCHAR(255)    NULL
+
+optionals                       string          VARCHAR(255)    NULL
+
+description                     string          text(500)       NULL
